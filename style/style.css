@@ -58,6 +58,9 @@ section.hero--section img {
     padding-bottom: 0;
 }
 
+:where(.instructions, .ingredients ){
+    border-bottom: 1px solid var(--light-grey);
+}
 h1{
     font-family: var(--young-serif);
     font-size: 2rem;
