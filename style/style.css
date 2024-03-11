@@ -23,3 +23,130 @@
     --outfit: "Outfit";
 }
 /* end of Variable */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 7.813rem;
+    padding-bottom: 7.813rem;
+    background-color: var(--eggshell);
+}
+
+main {
+    max-width: 50rem;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+}
+
+section.hero--section img {
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pb--not {
+    padding-bottom: 0;
+}
+
+h1{
+    font-family: var(--young-serif);
+    font-size: 2rem;
+    letter-spacing: 0.125rem;
+    line-height: 1.5;
+    color: var(--dark-charcoal);
+}
+
+h2{
+    font-family: var(--young-serif);
+    font-size: 1.875rem;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--nutmeg);
+    margin-bottom: .5rem;
+}
+
+h3 {
+    font-family: var(--outfit);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--dark-raspberry);
+}
+
+p{
+    font-family: var(--outfit);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--wenge-brown);
+}
+
+.rose--white {
+    background: var(--rose-white);
+    padding: 1rem 2rem;
+    border-radius: 0.625rem;
+}
+
+.rose--white h3{
+    margin-bottom: .5rem;
+}
+
+ul{
+    margin-left: 1rem;
+}
+
+:where(.ingredients, .rose--white) ul li::marker, ol li::marker{
+    color: var(--dark-raspberry);
+}
+
+:where(ul, ol) li {
+    font-family: var(--outfit);
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-left: 1.5rem;
+    color: var(--wenge-brown);
+}
+
+.ingredients ul, ol {
+    margin-left: 1.5rem;
+}
+
+.instructions ol li{
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    font-family: var(--outfit);
+    padding-top: 1.5rem;
+}
+
+table tr {
+    font-family: var(--outfit);
+    font-size: 1rem;
+    line-height: 1.5;
+    
+}
+
+table tr td:first-child{
+    color: var(--wenge-brown);
+}
+
+table tr td:last-child{
+    color: var(--nutmeg);
+}
+
+tr td {
+    padding: 1rem 2rem;
+}
+tr:not(:last-child) td {
+    border-bottom: 1px solid var(--light-grey);
+}
