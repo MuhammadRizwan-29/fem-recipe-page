@@ -61,6 +61,7 @@ section.hero--section img {
 :where(.instructions, .ingredients ){
     border-bottom: 1px solid var(--light-grey);
 }
+
 h1{
     font-family: var(--young-serif);
     font-size: 2rem;
@@ -150,6 +151,47 @@ table tr td:last-child{
 tr td {
     padding: 1rem 2rem;
 }
+
 tr:not(:last-child) td {
     border-bottom: 1px solid var(--light-grey);
+}
+
+/* Mobile Device */
+@media(max-width: 500px) {
+    body {
+        padding: 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    section.hero--section img{
+        border-radius: 0;
+    }
+
+    section.content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.875rem;
+        line-height: 1.25;
+        margin-bottom: 1.25rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    ul {
+        margin-left: 2.15rem;
+    }
+
+    :where(ul, ol) li {
+        padding-left: 1.08rem;
+    }
 }
