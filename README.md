@@ -12,3 +12,4 @@ Inspiration Design <a href="https://www.frontendmentor.io/challenges/recipe-page
 - Mobile Version
 - Tablet Version
 
+<a href="https://fem-recipe-page-challange.netlify.app/" targt="_blank">View Result</a>
